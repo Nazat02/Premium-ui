@@ -674,7 +674,312 @@ z-index:-1;
 
 }
 
+/* =====================
+   DASHBOARD
+===================== */
 
+
+.dashboard{
+
+width:90%;
+margin:150px auto;
+
+display:grid;
+
+grid-template-columns:260px 1fr;
+
+gap:30px;
+
+padding:30px;
+
+background:
+rgba(255,255,255,.06);
+
+border:
+
+1px solid var(--border);
+
+border-radius:35px;
+
+backdrop-filter:blur(20px);
+
+}
+
+
+
+
+
+.dash-sidebar{
+
+padding:25px;
+
+border-radius:25px;
+
+background:
+rgba(255,255,255,.05);
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+}
+
+
+
+.dash-sidebar h2{
+
+font-size:32px;
+
+}
+
+
+
+.dash-sidebar a{
+
+color:var(--muted);
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+
+.dash-sidebar a:hover{
+
+color:white;
+
+transform:translateX(8px);
+
+}
+
+
+
+
+
+.dash-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+
+
+.dash-header p{
+
+color:var(--muted);
+
+margin-top:10px;
+
+}
+
+
+
+
+.dash-cards{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+margin:40px 0;
+
+}
+
+
+
+
+
+.dash-card{
+
+padding:25px;
+
+border-radius:25px;
+
+background:
+rgba(255,255,255,.08);
+
+border:1px solid var(--border);
+
+}
+
+
+
+.dash-card h1{
+
+margin:20px 0;
+
+font-size:40px;
+
+}
+
+
+
+.dash-card span{
+
+color:#a5b4fc;
+
+}
+
+
+
+
+
+
+.analytics{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:25px;
+
+}
+
+
+
+
+
+.chart-box,
+.activity{
+
+padding:30px;
+
+background:
+rgba(255,255,255,.06);
+
+border-radius:30px;
+
+border:1px solid var(--border);
+
+}
+
+
+
+
+.chart{
+
+height:200px;
+
+display:flex;
+
+align-items:end;
+
+gap:20px;
+
+margin-top:30px;
+
+}
+
+
+
+.chart div{
+
+width:40px;
+
+height:50%;
+
+border-radius:20px;
+
+background:
+linear-gradient(
+180deg,
+#6366f1,
+#312e81
+);
+
+animation:
+grow 2s infinite alternate;
+
+}
+
+
+
+.chart div:nth-child(2){
+height:80%;
+}
+
+
+.chart div:nth-child(3){
+height:60%;
+}
+
+
+.chart div:nth-child(4){
+height:100%;
+}
+
+
+.chart div:nth-child(5){
+height:70%;
+}
+
+
+
+
+@keyframes grow{
+
+from{
+
+transform:scaleY(.8);
+
+}
+
+
+to{
+
+transform:scaleY(1);
+
+}
+
+}
+
+
+
+
+.activity p{
+
+margin:25px 0;
+
+color:var(--muted);
+
+}
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+.dashboard{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.dash-cards,
+.analytics{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+}
 
 /* =====================
    FLOATING PARTICLES
