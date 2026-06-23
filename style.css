@@ -648,7 +648,31 @@ visibility:hidden;
 
 
 
+.cursor-glow{
 
+position:fixed;
+
+width:300px;
+height:300px;
+
+border-radius:50%;
+
+pointer-events:none;
+
+background:
+radial-gradient(
+circle,
+rgba(99,102,241,.18),
+transparent 70%
+);
+
+
+transform:
+translate(-50%,-50%);
+
+z-index:-1;
+
+}
 
 
 
