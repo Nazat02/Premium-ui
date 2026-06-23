@@ -332,6 +332,34 @@ card.style.transform =
 
 });
 
+
+// FAQ Accordion
+
+
+const faqBoxes =
+document.querySelectorAll(".faq-box");
+
+
+
+faqBoxes.forEach(box=>{
+
+
+box.querySelector(".question")
+.addEventListener(
+"click",
+()=>{
+
+
+box.classList.toggle(
+"active"
+);
+
+
+
+});
+
+
+});
 // Cursor glow effect
 
 
